@@ -1,6 +1,9 @@
 import React from 'react';
 import { FiHash } from "react-icons/fi";
 import { useLoaderData, useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveBookIdForRead, saveBookIdForWish } from '../../utilities/localStorage';
 
 const BookDetails = () => {
     const allBooksData = useLoaderData();
@@ -8,6 +11,16 @@ const BookDetails = () => {
 
     const book = allBooksData.find(book => book.bookId === bookId);
     const { image, bookName, author, category, review, tags, totalPages, publisher, yearOfPublishing, rating } = book;
+
+    const handleRead = () => {
+        saveBookIdForRead(bookId);
+        toast("added to your reading list!");
+    }
+
+    const handleWishlist = () => {
+        saveBookIdForWish(bookId);
+        toast("added to your wishlist!");
+    }
 
     return (
         <div className='flex items-center gap-10 mb-20'>
@@ -40,10 +53,11 @@ const BookDetails = () => {
                     </div>
                 </div>
                 <div className='space-x-4 text-white font-medium text-sm'>
-                    <button className='bg-white text-[#131313] border border-[#1313134D] rounded-md py-3 px-4'>Read</button>
-                    <button className='bg-[#59C6D2] rounded-md py-3 px-4'>Wishlist</button>
+                    <button onClick={handleRead} className='bg-white text-[#131313] border border-[#1313134D] rounded-md py-3 px-4'>Read</button>
+                    <button onClick={handleWishlist} className='bg-[#59C6D2] rounded-md py-3 px-4'>Wishlist</button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
