@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiHash } from "react-icons/fi";
 import { useLoaderData, useParams } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveBookIdForRead, saveBookIdForWish } from '../../utilities/localStorage';
 
@@ -14,12 +14,10 @@ const BookDetails = () => {
 
     const handleRead = () => {
         saveBookIdForRead(bookId);
-        toast("added to your reading list!");
     }
 
     const handleWishlist = () => {
         saveBookIdForWish(bookId);
-        toast("added to your wishlist!");
     }
 
     return (

@@ -1,3 +1,6 @@
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const getBookIdForRead = () => {
     const storedIds = localStorage.getItem("readIds");
     if (storedIds) {
@@ -12,6 +15,10 @@ const saveBookIdForRead = (id) => {
     if (!storedIds.includes(id)) {
         storedIds.push(id);
         localStorage.setItem("readIds", JSON.stringify(storedIds));
+        toast.success("added to your reading list!");
+    }
+    else {
+        toast.warn("already been added to your reading list! can not add same book more than once!!");
     }
 }
 
@@ -31,6 +38,10 @@ const saveBookIdForWish = (id) => {
     if (!storedIds.includes(id)) {
         storedIds.push(id);
         localStorage.setItem("wishIds", JSON.stringify(storedIds));
+        toast.success("added to your wishlist!");
+    }
+    else {
+        toast.warn("already been added to your wishlist! can not add same book more than once!!");
     }
 }
 
