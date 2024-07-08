@@ -1,0 +1,80 @@
+[
+    {
+        "bookId": "1",
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/ZHvfrmq/1.png",
+        "review": "Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan. A profound examination of the American dream and the moral decay of society.",
+        "totalPages": 180,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": ["Classic", "Romance"],
+        "publisher": "Scribner",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": "2",
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/xFsqCd0/2.png",
+        "review": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice. It views a world of great beauty and savage inequities through the eyes of a young girl, as her father—a crusading local lawyer—risks everything to defend a black man unjustly accused of a terrible crime.",
+        "totalPages": 281,
+        "rating": 4.8,
+        "category": "Fiction",
+        "tags": ["Classic", "Legal"],
+        "publisher": "J.B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": "3",
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "https://i.ibb.co/zVwP9xk/3.png",
+        "review": "A dystopian social science fiction novel and cautionary tale about the future. The story takes place in a nightmarish totalitarian society where the government, known as the Party, wields total power for its own sake over the inhabitants. Orwell’s novel remains a haunting vision of the future where truth is subverted and individualism is crushed.",
+        "totalPages": 328,
+        "rating": 4.7,
+        "category": "Science Fiction",
+        "tags": ["Dystopia", "Political"],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": "4",
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/RThpb9k/4.png",
+        "review": "A romantic novel that charts the emotional development of protagonist Elizabeth Bennet, who learns the error of making hasty judgments and comes to appreciate the difference between the superficial and the essential. The narrative explores themes of love, reputation, and class in the early 19th century.",
+        "totalPages": 279,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": ["Classic", "Romance"],
+        "publisher": "T. Egerton",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": "5",
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "https://i.ibb.co/xLL0DzM/5.png",
+        "review": "Bilbo Baggins, a hobbit, is dragged into an epic quest by the wizard Gandalf and a company of dwarves who seek to reclaim their stolen mountain home from a dragon named Smaug. This prelude to the Lord of the Rings is a timeless tale of adventure, bravery, and the triumph of good over evil.",
+        "totalPages": 310,
+        "rating": 4.8,
+        "category": "Fantasy",
+        "tags": ["Adventure", "Fantasy"],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+    },
+    {
+        "bookId": "6",
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/sHf0WKB/6.png",
+        "review": "Holden Caulfield, a teenager from New York City, narrates the novel in which he describes a few days in his life, focusing on his feelings of alienation and his journey of self-discovery. A controversial novel originally published for adults, it has since become popular with adolescent readers for its themes of teenage angst and rebellion.",
+        "totalPages": 214,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": ["Classic", "Coming-of-age"],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    }
+]
