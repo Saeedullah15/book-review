@@ -1,10 +1,18 @@
 import React from 'react';
 import { FaRegStar } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 const Book = ({ book }) => {
-    const { image, bookName, author, tags, category, rating } = book;
+    const { bookId, image, bookName, author, tags, category, rating } = book;
+
+    const navigate = useNavigate();
+
+    const handleBookClick = () => {
+        navigate(`/book/bookDetails/${bookId}`);
+    }
+
     return (
-        <div className="bg-base-100 border border-[#13131326] rounded-2xl p-5">
+        <div onClick={handleBookClick} className="bg-base-100 border border-[#13131326] rounded-2xl p-5">
             <figure>
                 <img className='bg-[#F3F3F3] rounded-2xl'
                     src={image}
@@ -12,7 +20,7 @@ const Book = ({ book }) => {
             </figure>
             <div className='flex items-center gap-5 my-4 text-[#23BE0A] font-bold'>
                 {
-                    tags.map(tag => <small className='bg-[#23BE0A0D] rounded-3xl py-1 px-3'>{tag}</small>)
+                    tags.map((tag, idx) => <small key={idx} className='bg-[#23BE0A0D] rounded-3xl py-1 px-3'>{tag}</small>)
                 }
             </div>
             <div className="">
