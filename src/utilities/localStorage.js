@@ -12,13 +12,14 @@ const getBookIdForRead = () => {
 }
 const saveBookIdForRead = (id) => {
     const storedIds = getBookIdForRead();
+    const wishIds = getBookIdForWish();
     if (!storedIds.includes(id)) {
         storedIds.push(id);
         localStorage.setItem("readIds", JSON.stringify(storedIds));
         toast.success("added to your reading list!");
     }
     else {
-        toast.warn("already been added to your reading list! can not add same book more than once!!");
+        toast.warn("already been added to your reading list! you can not add the same book more than once!!");
     }
 }
 
@@ -41,7 +42,7 @@ const saveBookIdForWish = (id) => {
         toast.success("added to your wishlist!");
     }
     else {
-        toast.warn("already been added to your wishlist! can not add same book more than once!!");
+        toast.warn("already been added to your wishlist! you can not add the same book more than once!!");
     }
 }
 

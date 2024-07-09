@@ -3,9 +3,12 @@ import { FiHash } from "react-icons/fi";
 import { useLoaderData, useParams } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveBookIdForRead, saveBookIdForWish } from '../../utilities/localStorage';
+import { getBookIdForRead, getBookIdForWish, saveBookIdForRead, saveBookIdForWish } from '../../utilities/localStorage';
 
 const BookDetails = () => {
+    // const [allRead, setAllRead] = useState([])
+    // const [allWish, setAllWish] = useState([])
+
     const allBooksData = useLoaderData();
     const { bookId } = useParams();
 
@@ -14,10 +17,21 @@ const BookDetails = () => {
 
     const handleRead = () => {
         saveBookIdForRead(bookId);
+        const readIds = getBookIdForRead();
+        // setAllRead(readIds);
+        // console.log(allRead);
+        // console.log(allWish);
+        // if (allRead.includes(bookId)) {
+        //     const filteredWish = allWish.filter(eachWish => eachWish !== bookId);
+        //     setAllWish(filteredWish);
+        // }
+
     }
 
     const handleWishlist = () => {
         saveBookIdForWish(bookId);
+        const wishIds = getBookIdForWish();
+        // setAllWish(wishIds);
     }
 
     return (
