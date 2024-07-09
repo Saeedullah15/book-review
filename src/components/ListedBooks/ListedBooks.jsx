@@ -2,6 +2,8 @@ import React from 'react';
 import { IoIosArrowDown } from "react-icons/io";
 import { useLoaderData } from 'react-router-dom';
 import { getBookIdForRead, getBookIdForWish } from '../../utilities/localStorage';
+import ReadBookCard from '../ReadBookCard/ReadBookCard';
+import WishBookCard from '../WishBookCard/WishBookCard';
 
 const ListedBooks = () => {
     const allBooksData = useLoaderData();
@@ -29,14 +31,26 @@ const ListedBooks = () => {
             </div>
             <div>
                 <div role="tablist" className="tabs tabs-lifted">
-                    <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" defaultChecked />
-                    <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-lg p-6">
-                        <h2>read books: {readBooksData.length}</h2>
+                    <input type="radio" name="my_tabs_2" role="tab" className="tab text-[#13131391] font-semibold text-base" aria-label="Read Books" defaultChecked />
+                    <div role="tabpanel" className="tab-content bg-base-100 border-t-base-300 rounded-lg p-6">
+                        <h2 className='text-xl font-semibold text-black mb-5'>Total Books: {readBooksData.length}</h2>
+                        {
+                            readBooksData.map(readBook => <ReadBookCard
+                                key={readBook.bookId}
+                                readBook={readBook}
+                            ></ReadBookCard>)
+                        }
                     </div>
 
-                    <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wishlist books" />
-                    <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-lg p-6">
-                        <h2>wish books: {wishBooksData.length}</h2>
+                    <input type="radio" name="my_tabs_2" role="tab" className="tab text-[#13131391] font-semibold text-base" aria-label="Wishlist books" />
+                    <div role="tabpanel" className="tab-content bg-base-100 border-t-base-300 rounded-lg p-6">
+                        <h2 className='text-xl font-semibold text-black mb-5'>Total Books: {wishBooksData.length}</h2>
+                        {
+                            wishBooksData.map(wishBook => <WishBookCard
+                                key={wishBook.bookId}
+                                wishBook={wishBook}
+                            ></WishBookCard>)
+                        }
                     </div>
                 </div>
             </div>
