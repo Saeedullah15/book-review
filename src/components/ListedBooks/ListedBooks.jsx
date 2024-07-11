@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { IoIosArrowDown } from "react-icons/io";
 import { useLoaderData } from 'react-router-dom';
 import { getBookIdForRead, getBookIdForWish } from '../../utilities/localStorage';
@@ -34,6 +35,9 @@ const ListedBooks = () => {
 
     return (
         <div className='mb-20'>
+            <Helmet>
+                <title>Book Haven | Listed Books</title>
+            </Helmet>
             <h3 className='text-center text-black text-3xl font-bold bg-[#1313130D] rounded-2xl py-6 mb-5'>Books</h3>
             <div className='max-w-fit mx-auto mb-5'>
                 <details className="dropdown">

@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const AboutUs = () => {
     return (
         <div className='mb-20 pt-8'>
+            <Helmet>
+                <title>Book Haven | About Us</title>
+            </Helmet>
             <div className='px-4 lg:px-28 mb-8'>
                 <h2 className='font-bold text-xl text-center mb-3'>Mission & Vision</h2>
                 <p className='text-justify'>Our mission at Book Haven is to foster a love for reading by providing a comprehensive platform where book enthusiasts can discover, review, and discuss their favorite books. We strive to create a vibrant community where readers can connect with like-minded individuals, find their next great read, and support authors from around the world. Our goal is to make reading accessible, enjoyable, and an integral part of our users' lives.

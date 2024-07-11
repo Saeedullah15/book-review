@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     return (
         <div className='py-8 mb-10'>
+            <Helmet>
+                <title>Book Haven | Contact</title>
+            </Helmet>
             <h2 className='text-xl font-bold mb-3 text-center'>Get in touch with us</h2>
             <p className='px-4 lg:px-32 text-justify'>We'd love to hear from you! Whether you have a question, feedback, or just want to share your love for books, feel free to reach out always!!
             </p>

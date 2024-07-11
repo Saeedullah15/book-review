@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { FiHash } from "react-icons/fi";
 import { useLoaderData, useParams } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -36,6 +37,9 @@ const BookDetails = () => {
 
     return (
         <div className='flex flex-col lg:flex-row items-center gap-10 mb-20 px-4'>
+            <Helmet>
+                <title>Book Details | {bookId}</title>
+            </Helmet>
             <div className='lg:w-1/2 bg-[#1313130D] rounded-2xl py-20'>
                 <img src={image} alt="" />
             </div>

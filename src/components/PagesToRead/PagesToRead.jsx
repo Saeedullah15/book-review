@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLoaderData } from 'react-router-dom';
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { getBookIdForRead } from '../../utilities/localStorage';
@@ -26,6 +27,9 @@ const PagesToRead = () => {
 
     return (
         <div className='flex justify-center items-center my-20'>
+            <Helmet>
+                <title>Book Haven | Pages to Read</title>
+            </Helmet>
             <ResponsiveContainer minWidth={250} minHeight={400}>
                 <BarChart
                     width={1000}
