@@ -4,9 +4,9 @@ const Contact = () => {
     return (
         <div className='py-8 mb-10'>
             <h2 className='text-xl font-bold mb-3 text-center'>Get in touch with us</h2>
-            <p className='px-32 text-justify'>We'd love to hear from you! Whether you have a question, feedback, or just want to share your love for books, feel free to reach out always!!
+            <p className='px-4 lg:px-32 text-justify'>We'd love to hear from you! Whether you have a question, feedback, or just want to share your love for books, feel free to reach out always!!
             </p>
-            <div className='w-1/3 mx-auto mt-5 space-y-2'>
+            <div className='lg:w-1/3 px-5 lg:px-0 mx-auto mt-5 space-y-2'>
                 <label className="input input-bordered flex items-center gap-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Contact = () => {
                 </textarea>
                 <button className='bg-[#23BE0A] rounded-lg py-2 px-4 text-white font-medium'>Send Your Message</button>
             </div>
-            <div className='mt-20 px-32'>
+            <div className='mt-20 px-4 lg:px-32'>
                 <h2 className='text-xl font-bold mb-6 text-center'>Frequently Asked Questions (FAQ)</h2>
                 <div className="join join-vertical w-full">
                     <div className="collapse collapse-arrow join-item border-base-300 border">

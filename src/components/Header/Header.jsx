@@ -4,9 +4,9 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div className='flex justify-between items-center my-8'>
+        <div className='flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:justify-between items-center my-8'>
             <h1 className='text-3xl font-bold text-black'>Book Haven</h1>
-            <nav className='space-x-10 text-sm text-[#131313a2] font-semibold'>
+            <nav className='flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:items-center lg:space-x-10 lg:text-sm text-[#131313a2] text-center font-semibold'>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/listedBooks">Listed Books</NavLink>
                 <NavLink to="/pagesToRead">Pages to Read</NavLink>

@@ -23,7 +23,7 @@ const Book = ({ book }) => {
                     tags.map((tag, idx) => <small key={idx} className='bg-[#23BE0A0D] rounded-3xl py-1 px-3'>{tag}</small>)
                 }
             </div>
-            <div className="">
+            <div>
                 <h2 className="font-bold text-xl text-black mb-3">{bookName}</h2>
                 <p className='font-bold text-[#13131398] text-sm mb-4'>By : {author}</p>
             </div>

@@ -34,7 +34,7 @@ const ListedBooks = () => {
     return (
         <div className='mb-20'>
             <h3 className='text-center text-black text-3xl font-bold bg-[#1313130D] rounded-2xl py-6 mb-5'>Books</h3>
-            <div className='max-w-fit mx-auto'>
+            <div className='max-w-fit mx-auto mb-5'>
                 <details className="dropdown">
                     <summary className="btn text-base text-white bg-[#23BE0A] hover:bg-[#23BE0A] rounded-lg px-7">
                         Sort By<IoIosArrowDown className='text-base ml-2' />
@@ -59,7 +59,7 @@ const ListedBooks = () => {
                         }
                     </div>
 
-                    <input type="radio" name="my_tabs_2" role="tab" className="tab text-[#13131391] font-semibold text-base" aria-label="Wishlist books" />
+                    <input type="radio" name="my_tabs_2" role="tab" className="tab text-[#13131391] font-semibold text-base" aria-label="Wishlist Books" />
                     <div role="tabpanel" className="tab-content bg-base-100 border-t-base-300 rounded-lg p-6">
                         <h2 className='text-xl font-semibold text-black mb-5'>Total Books: {wishBooks.length}</h2>
                         {

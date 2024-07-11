@@ -3,14 +3,14 @@ import React from 'react';
 const AboutUs = () => {
     return (
         <div className='mb-20 pt-8'>
-            <div className='px-28 mb-8'>
+            <div className='px-4 lg:px-28 mb-8'>
                 <h2 className='font-bold text-xl text-center mb-3'>Mission & Vision</h2>
                 <p className='text-justify'>Our mission at Book Haven is to foster a love for reading by providing a comprehensive platform where book enthusiasts can discover, review, and discuss their favorite books. We strive to create a vibrant community where readers can connect with like-minded individuals, find their next great read, and support authors from around the world. Our goal is to make reading accessible, enjoyable, and an integral part of our users' lives.
                 </p>
             </div>
             <div>
                 <h2 className='font-bold text-xl text-center mb-3'>History</h2>
-                <p className='text-justify px-28'>Book Haven was founded in 2019 by a group of passionate readers who wanted to create a space where book lovers could come together and share their love for literature. What started as a small blog quickly grew into a comprehensive website offering a vast collection of books across various genres.
+                <p className='text-justify px-4 lg:px-28'>Book Haven was founded in 2019 by a group of passionate readers who wanted to create a space where book lovers could come together and share their love for literature. What started as a small blog quickly grew into a comprehensive website offering a vast collection of books across various genres.
                 </p>
                 <ul className="timeline timeline-vertical my-10">
                     <li>
@@ -102,7 +102,7 @@ const AboutUs = () => {
                         <div className="timeline-end timeline-box text-sm font-medium">Continued growth and development, with a focus on enhancing the user experience and expanding our book collection.</div>
                     </li>
                 </ul>
-                <p className='text-justify px-28'>Through the years, our commitment to promoting literacy and the joy of reading has remained unwavering. We believe that books have the power to change lives, and we are dedicated to helping our users discover the magic of reading.</p>
+                <p className='text-justify px-4 lg:px-28'>Through the years, our commitment to promoting literacy and the joy of reading has remained unwavering. We believe that books have the power to change lives, and we are dedicated to helping our users discover the magic of reading.</p>
             </div>
         </div>
     );

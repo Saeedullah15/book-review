@@ -7,7 +7,7 @@ function App() {
 
     return (
         <>
-            <div className='max-w-7xl mx-auto'>
+            <div className='lg:max-w-7xl mx-auto'>
                 <Header></Header>
                 <Outlet></Outlet>
             </div>
