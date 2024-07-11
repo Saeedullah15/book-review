@@ -8,10 +8,12 @@ import WishBookCard from '../WishBookCard/WishBookCard';
 const ListedBooks = () => {
     const [readBooks, setReadBooks] = useState([]);
     const [wishBooks, setWishBooks] = useState([]);
+    console.log(readBooks);
 
     const allBooksData = useLoaderData();
     const readIds = getBookIdForRead();
     const wishIds = getBookIdForWish();
+    // console.log(allBooksData);
 
     useEffect(() => {
         const readBooksData = allBooksData.filter(book => readIds.includes(book.bookId));
@@ -20,7 +22,6 @@ const ListedBooks = () => {
         const wishBooksData = allBooksData.filter(book => wishIds.includes(book.bookId));
         setWishBooks(wishBooksData);
     }, [])
-    console.log(readBooks, wishBooks);
 
     const handleSorting = (text) => {
         if (text === "rating") {
