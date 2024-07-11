@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Cell, Tooltip, XAxis, YAxis } from 'recharts';
 import { getBookIdForRead } from '../../utilities/localStorage';
 
 const getPath = (x, y, width, height) => {
@@ -40,6 +40,7 @@ const PagesToRead = () => {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="bookName" />
                 <YAxis />
+                <Tooltip></Tooltip>
                 <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                     {data.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index % 20]} />
