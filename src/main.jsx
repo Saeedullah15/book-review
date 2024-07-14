@@ -28,18 +28,18 @@ const router = createBrowserRouter([
             {
                 path: "/listedBooks",
                 element: <ListedBooks></ListedBooks>,
-                loader: () => fetch("books.json"),
+                loader: () => fetch("/books.json"),
                 errorElement: <ErrorPage></ErrorPage>
             },
             {
                 path: "/pagesToRead",
                 element: <PagesToRead></PagesToRead>,
-                loader: () => fetch("books.json"),
+                loader: () => fetch("/books.json"),
             },
             {
                 path: "/book/bookDetails/:bookId",
                 element: <BookDetails></BookDetails>,
-                loader: () => fetch("books.json"),
+                loader: () => fetch("/books.json"),
                 errorElement: <ErrorPage></ErrorPage>
             },
             {
